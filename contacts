@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KSTopicStarter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@400&display=swap" rel="stylesheet">
+    <style>
+    @keyframes recontainer {
+        0%   {border: 2px solid rgb(21, 216, 241);}
+        25%  {border: 2px solid rgb(102, 197, 110);}
+        50%  {border: 2px solid rgba(224, 228, 22, 0.219);}
+        75%  {border: 2px solid rgb(230, 33, 213);}
+        100% {border: 2px solid rgb(233, 18, 18);}
+    }
+        body {
+            margin: 0;
+            height: 100vh;
+            background-color: #222;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 60px;
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+            z-index: 100;
+        }
+        h1 {
+            color: white;
+            font-size: 24px;
+            margin: 0;
+            font-family: Jura, sans-serif;
+        }
+        .nav-links {
+            display: flex;
+            gap: 15px;
+        }
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+            font-family: Jura, sans-serif;
+        }
+        .nav-link:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: white; 
+            text-align: center; 
+            flex-direction: column;
+        }
+        .project-container {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        .project-box {
+            background-color: transparent;
+            border: 2px solid white;
+            border-radius: 8px;
+            animation-name: recontainer;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            padding: 10px;
+            font-family: Jura, sans-serif;
+            width: 300px;
+            text-align: center;
+        }
+        .image-frame {
+            border: 2px solid white;
+            border-radius: 4px;
+            padding: 5px;
+        }
+        .project-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+        .get-button {
+            color: white; 
+            background-color: black; 
+            border: none; 
+            border-radius: 4px; 
+            padding: 5px 10px; 
+            cursor: pointer; 
+            transition: background-color 0.3s; 
+            text-decoration: none; 
+            font-family: Jura, sans-serif; 
+            display: inline-block; 
+            margin-top: 10px; 
+        }
+        .get-button:hover {
+            background-color: rgba(255, 255, 255, 0.1); 
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>KSTOPICSTARTER</h1>
+    <div class="nav-links">
+        <a href="https://t.me/" target="_blank" class="nav-link">Telegram</a>
+        <a href="https://discord.com/" target="_blank" class="nav-link">Discord</a>
+    </div>
+</header>
+<div class="content">
+    <h2>My Projects</h2>
+    <div class="project-container">
+        <div class="project-box">
+            <div class="image-frame">
+                <img src="https://scriptblox.com/images/script/8692913-1723925302639.png" alt="Project Image" class="project-img">
+            </div>
+            <h3>Vernox</h3>
+            <a href="https://discord.gg/JJgXxwQEbe" target="_blank" class="get-button">Get</a>
+        </div>
+        <div class="project-box">
+            <div class="image-frame">
+                <img src="https://scriptrb.com/img/uploads/679cd091059e7_106989035172456074720.webp" alt="SpineWare Image" class="project-img">
+            </div>
+            <h3>SpineWare</h3>
+            <a href="https://discord.gg/Pk7VQqZvZr" target="_blank" class="get-button">Get</a>
+        </div>
+    </div>
+</div>
+<footer>
+    <p>2025, All rights reserved © </p>
+</footer>
+</body>
+</html>
